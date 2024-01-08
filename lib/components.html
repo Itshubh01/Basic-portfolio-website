@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component Space</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>My Component Library - hello </h1>
+    <p>Making this Component Library to ease my work for the project concerned</p>
+
+    <!-- this is for the line that you see at the end of every section-->
+    <hr>  
+
+    <!-- this will include all the font types -->
+    <h2>@typography</h2>
+    
+    <h1>For Biggest heading</h1>
+    <h2>For second Biggest heading</h2>
+    <p> for normal text-paragraph</p>
+    <small>for relatively smaller text</small>
+
+    <hr>
+
+    <h2>@containers</h2>
+    <!-- div tag can be used as a container, it doesn't have any specific meaning of it's own -->
+    <h3>fluid container</h3>
+    <div class="container">This is a fluid container- will go till the end of the page</div>
+
+    <h3>center container</h3>
+    <div class="container container-center"> This is a centered container - will go on the center of the page of specified width</div>
+
+    <hr>
+
+
+    <h2>@Links</h2>
+    <!-- using anchor tag -->
+    <!-- example - <a href="https://google.com"> google</a> -->
+    <a class="link primary-link" href="/">Primary Link</a>   <!--Link where user will have to click every time -->
+    <a class="link secondary-link" href="/">Secondary Link</a>  <!--Link where user if want can click or not -->
+ 
+    <hr>
+
+    <h2>@lists</h2>
+
+    <!-- unordered list-->
+    <h3>unordered list--</h3>
+    <p>this list will not have bullet</p>
+    <ul class="list-non-bullet">
+        <li>Item One</li>
+        <li>Item two</li>
+        <li>Item three</li>
+    </ul>
+
+    <!-- unordered inline list -->
+    <!-- inline means- it takes only the space of the size of text not the whole row, i.e doesn't move to next line ,eg:small tag is an inline, whereas p, h3, are bloock elements-->
+    <h3>Inline unordered list</h3>
+    <ul class="list-non-bullet">
+        <li class="list-item-inline">Inline unordered list</li>
+        <li class="list-item-inline">Inline unordered List</li>
+        <li class="list-item-inline">Inline unordered List</li>
+    </ul>
+
+    <!-- <h3>Ordered List</h3>
+    <ol>
+        <li>Item One</li>
+        <li>Item two</li>
+        <li>Item three</li>
+    </ol> -->
+
+    <h3>Reverse Ordered List</h3>
+    <ol reversed>
+        <li>Item One</li>
+        <li>Item two</li>
+        <li>Item three</li>
+    </ol>
+
+    <hr>
+
+    <h2>@nav</h2>
+
+    <nav class="navigation container">
+        <div class="nav-brand">Brand</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link link-active" href="/">home</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/">products</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/">about</a>
+            </li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <!-- used to show the must buy or price or offer on top that comes on sites -->
+    <h2>@Header</h2> 
+    <header class="ninja">
+        <div class="container container-center">
+            <img class="ninja-img" src="" alt=""/>
+            <h1 class="ninja-heading">Hey! It's Shubhangi the <span style="color: var(--primary-color);">Software Developer</span> </h1>
+        </div>
+        
+    </header>
+    <hr>
+
+    <h2>@section</h2>
+    
+    <section class="section">
+        <div class="container container-center">
+            <h1>white section</h1>
+            <p>this will have white background</p>
+        </div>
+       
+    </section>
+
+    <section class="section offwhite">
+        <div class="container container-center">
+            <h1>off white section</h1>
+            <p>this will have gray background</p>
+        </div>
+        
+    </section>
+
+    <hr>
+
+    <h2>@footer</h2>
+    <footer class="footer">
+        <div class="footer-header">some small headings inside footer</div>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline"><a class="link" href="/">socialone</a></li>
+            <li class="list-item-inline"><a class="link" href="/">socialtwo</a></li>
+            <li class="list-item-inline"><a class="link" href="/">socialthree</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
